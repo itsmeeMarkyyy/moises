@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1c87b1;
+}
+header {
+    background: #E0FFFF;
+    padding: 40px 10px;
+    text-align: center;
+    color: #4682B4;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+}   
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ADD8E6;
+}
+h2{
+    text-align: center;
+    color: #00BFFF;
+    font-size: xx-large;
+}
+p{
+    font-size: 22px;
+    color: #4682B4;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+.skills-grid li {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.skills-grid li:hover {
+  transform: scale(1.05);
+}
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-list li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s, transform 0.3s;
+}
+.contact-list li a:hover {
+  color: #2575fc;
+  transform: scale(1.05);
+}
+nav label {
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4682B4;
+    font-size: 18px;
+}
+nav label:hover { 
+    text-decoration: underline; 
+    color: #00BFFF;
+}
+ul{
+    color:#4682B4 ;
+    font-size: 23px;
+    text-align: justify;
+    text-decoration: none;
+}
+.page {
+    display: none;
+    max-width: 800px;
+    background: #FFFFFF;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.2);
+}
+#home:checked ~ #homePage,
+#skills:checked ~ #skillsPage,
+#education:checked ~ #educationPage,
+#hobbies:checked ~ #hobbiesPage,
+#contact:checked ~ #contactPage {
+    display: block;
+}
+input[type="radio"] { display: none; }
+footer {
+    background: #B0E0E6;
+    padding: 20px;
+    text-align: center;
+    color: #2b85ce;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+

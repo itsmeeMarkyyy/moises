@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moises, Jenmar V.</title>
+</head>
+<body>
+    <input type="radio" name="pages" id="home" checked>
+    <input type="radio" name="pages" id="skills">
+    <input type="radio" name="pages" id="education">
+    <input type="radio" name="pages" id="hobbies">
+    <input type="radio" name="pages" id="contact">
+        <header> <img src="akotoo.jpg" alt="Mukha ko po">
+           
+            <h1>Jenmar Villegas Moises</h1>
+            <p> BSIT Student at Tarlac Agricultural University</p>
+        <nav>
+            <label for ="home">Home</label>
+            <label for ="skills">Skills</label>
+            <label for ="education">Education</label>
+            <label for ="hobbies">Hobbies</label>
+            <label for ="contact">Contact</label>
+        </nav>
+        </header>
+
+        <div class="page" id="homePage">
+            <h2>About Me</h2>
+            <p>Hello! I’m <strong>Jenmar Moises</strong>, a passionate student at<strong> Tarlac Agricultural University</strong>.
+            A <strong> 19 years old</strong> dedicated individual residing in <strong>, Camiling, Tarlac</strong>. In my personal life,
+            I am affirm believer in continuous learning and self improvement. I enjoy exploring new experiences, meeting new people, and expanding my knowlegde in IT field.
+            I look forward to connecting with like minded individuals and exploring opportunities for growth and collaboration. </p>
+        </div>
+
+        <div class="page" id="skillsPage">
+            <h2>Skills</h2>
+            <ul class="skills-grid">
+                <li>🌱 Adaptability</li>
+                <li>⚡ Multitasking</li>
+                <li>🤝 Teamwork</li>
+                <li>🗣 Communication</li>
+                <li>⏳ Time Management</li>
+                <li>🎨 Creativity</li>
+                <li>👂 Active Listening</li>
+                <li>🧩 Problem-Solving</li>
+            </ul>
+        </div>
+
+        <div class="page" id="educationPage">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bilad Elementary School (Main)</strong> — Bilad Camiling Tarlac (S.Y 2013-2018)  </li>
+                <li><strong>Bilad High School (GAS)</strong> — Bilad Camiling Tarlac (S.Y 2022-2024)  </li>
+                <li><strong>Vocational Course: Electronic Product Assembly and Servicing NC II (260Hrs)</strong> — Advance Institute Technology of Tarlac City (2024) </li>
+                <li><strong>Bachelor of Science in Information Technology</strong> — Tarlac Agricultural University (2022–Present)</li>
+            </ul>
+        </div>
+
+        <div class="page" id="hobbiesPage">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>🌍 Exploring nature </li>
+                <li>💻 Learning Coding and experimenting with new task</li>
+                <li>🎮 Playing Online Mobile Games</li>
+                <li>📚 Reading and Continuous Learning</li>
+                <li>🎶 Listening to Music</li></ul></div>
+
+        <div class="page" id="contactPage">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li>
+                    <a href="https://www.facebook.com/share/17Ta6R7rum/" target="_blank">
+                    📘 Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@moisesjenmar_?_r=1&_t=ZS-91ucPMN6XBa" target="_blank">
+                    📸 Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@moisesjenmar_?_r=1&_t=ZS-91ucPMN6XBa" target="_blank">
+                    🎵 TikTok
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:jenmarmoises30@gmail.com">
+                    ✉️ Gmail
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <footer>
+            © 2025 Moises, Jenmar V. — All Rights Reserved
+        </footer>
+</body>
+</html>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1c87b1;
+}
+header {
+    background: #E0FFFF;
+    padding: 40px 10px;
+    text-align: center;
+    color: #4682B4;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+}   
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ADD8E6;
+}
+h2{
+    text-align: center;
+    color: #00BFFF;
+    font-size: xx-large;
+}
+p{
+    font-size: 22px;
+    color: #4682B4;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+.skills-grid li {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.skills-grid li:hover {
+  transform: scale(1.05);
+}
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-list li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s, transform 0.3s;
+}
+.contact-list li a:hover {
+  color: #2575fc;
+  transform: scale(1.05);
+}
+nav label {
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4682B4;
+    font-size: 18px;
+}
+nav label:hover { 
+    text-decoration: underline; 
+    color: #00BFFF;
+}
+ul{
+    color:#4682B4 ;
+    font-size: 23px;
+    text-align: justify;
+    text-decoration: none;
+}
+.page {
+    display: none;
+    max-width: 800px;
+    background: #FFFFFF;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.2);
+}
+#home:checked ~ #homePage,
+#skills:checked ~ #skillsPage,
+#education:checked ~ #educationPage,
+#hobbies:checked ~ #hobbiesPage,
+#contact:checked ~ #contactPage {
+    display: block;
+}
+input[type="radio"] { display: none; }
+footer {
+    background: #B0E0E6;
+    padding: 20px;
+    text-align: center;
+    color: #2b85ce;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+</style>
